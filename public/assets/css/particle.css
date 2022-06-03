@@ -1,0 +1,64 @@
+/* ---- reset ---- */
+/* body { 
+  margin:0; 
+  padding: 0;
+  font:normal 75% Arial, Helvetica, sans-serif; 
+}  */
+
+canvas { 
+  display: block; 
+} 
+
+/* ---- Particle JS ---- */ 
+#particles-js{ 
+  position:absolute; 
+  width: 100%; 
+  height: 100%; 
+  background-color: #fff; 
+  /* background-image: url("");  */
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: 50% 50%; 
+} 
+
+.container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  color: #fff;  
+}
+
+a:hover {
+  color: black;
+}
+
+.btn-auth {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 3px;
+  transition: 0.5s;
+  color: #fff;
+  background: #ff5e5e;
+}
+
+.logo {
+  width: 25%;
+  margin: auto;
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    width: 50%;
+  }
+}

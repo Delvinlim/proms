@@ -1,0 +1,95 @@
+:root {
+  --main-color: #ff5e5e;
+  --main-color-hover-light: #f76f6f;
+  --main-color-hover-dark: #f14c4c;
+}
+
+.no-project {
+  max-width: 800px;
+  border: 3px solid #ff5e5e;
+  border-radius: 10px;
+  box-shadow: 0 0 15px  rgb(255, 106, 106);
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  margin-top: 100px;
+  /* padding: 100px; */
+}
+
+.btn-join{
+  background:#ff5e5e;
+  box-shadow: 5px 5px 20px -2px rgba(241,76,76,0.75);
+  color: #fff;
+  width: 75%;
+}
+
+.btn-join:hover{
+  background-color: #f14c4c;
+  color: #fff;
+}
+
+.project-member-card,
+.project-description-card,
+.project-information-card,
+.project-groups-card {
+  /* margin: 10px; */
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid yellow;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  border-radius: 40px;
+  transition: 0.4s;
+}
+
+.project-member-card:hover,
+.project-description-card:hover,
+.project-information-card:hover {
+  /* transform: scale(1.2, 1.2); */
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.input{
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: -0.2rem; */
+  margin-left: 10px;
+  width: 60%;
+  height: 100%;
+  /* width: 76.5%;
+  height: 100%; */
+  border: 3px solid #ff5e5e;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  color:rgb(0, 0, 0);
+  outline: none;
+  /* padding: 1rem; */
+  /* margin-top: -4px; */
+  background: none;
+  
+}
+.input:focus{
+  border: 3px solid #ff5e5e;
+  border-color: #ff5e5e;
+  /* box-shadow:0 0 8px 0 #ff4848; */
+}
+.input:focus ~ .label,
+.input:not(:placeholder-shown).input:not(:focus) ~ .label {
+border-left-color: #ff5e5e;
+border-radius:20px;
+top: -0.5rem;
+font-size: 0.8rem;
+left: 0.8rem;
+}
+
+
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+

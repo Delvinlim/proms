@@ -1,0 +1,194 @@
+:root {
+  --main-color: #ff5e5e;
+  --main-color-hover-light: #f76f6f;
+  --main-color-hover-dark: #f14c4c;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover { 
+  color: #ff5e5e;
+  color: var(--main-color-hover-dark);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+.student, 
+.lecturer{
+  max-width: 550px;
+  width: 100%;
+}
+
+.student p, 
+.lecturer p{
+  font-size: 30px;
+  margin-bottom: -5px;
+  color: var(--main-color-hover-dark);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.container{
+  max-width: 550px;
+  width: 100%;
+  padding: 25px 20px;
+  border: 5px solid var(--main-color-hover-dark);
+  border-radius: 5px;
+}
+
+
+.container .form{
+  height: 100%;
+  width: 100%;
+}
+
+
+.container .form-content{
+  display: flex;
+  align-items: center;
+}
+
+.form-content .signup-form{
+  width: 90%;
+  margin-left: 20px;
+}
+
+form .form-content .title{
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+form .form-content .text{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+form .form-content .text a:hover{
+  text-decoration: underline;
+}
+
+form .form-content .title:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 20px;
+  background: var(--main-color);
+}
+
+
+form .signup-form .title:before{
+  width: 85px;
+}
+
+.form-content .input-boxes{
+  margin-top: 25px;
+}
+
+.form-content .input-box{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 0 10px;
+  position: relative;
+}
+
+.form-content .input-box i{
+  position: absolute;
+}
+
+.form-content .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  transition: all 0.3s ease;
+}
+
+.form-content .input-box input:focus,
+.form-content .input-box input:valid{
+  border-color: var(--main-color-hover-dark);
+}
+
+.form-content .button-input-box input{
+  height: 100%;
+  width: 30%;
+  outline: none;
+  border: none;
+  padding: 0 5px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border-radius: 3px;
+  background-color: #f14c4c;
+  border: 1px solid var(--main-color);
+}
+
+.form-content .button-input-box input:hover{
+  color: var(--main-color);
+  background-color: white;
+  border-color: var(--main-color);
+}
+
+.fa-solid{
+  color: var(--main-color-hover-dark) ;
+}
+
+.form-content text a{
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.form-content text a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+@media (max-width: 730px) {
+  .container .cover{
+    display: none;
+  }
+  .form-content .signup-form{
+   width: 100%;
+  }
+}

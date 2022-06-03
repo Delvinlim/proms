@@ -1,0 +1,64 @@
+:root {
+  --main-color: #ff5e5e;
+  --main-color-hover-light: #faafaf;
+  --main-color-hover-dark: #f14c4c;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  color:#ff5e5e;
+}
+
+.profile {
+  /* border: 1px solid green; */
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  border-radius: 30px;
+}
+
+.profile .profile-image {
+  width: 200px;
+  height: auto;
+}
+
+.btn-save {
+  background:#ff5e5e;
+  box-shadow: 5px 5px 20px -2px rgba(241,76,76,0.75);
+  color: #fff;
+}
+
+.pagination > li > a
+{
+    background-color: white;
+    color: var(--main-color);
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: var(--main-color) !Important;
+    border: solid 1px var(--main-color) !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: var(--main-color) !Important;
+    border: solid 1px var(--main-color);
+}

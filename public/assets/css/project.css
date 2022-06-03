@@ -1,0 +1,258 @@
+:root {
+  --main-color: #ff5e5e;
+  --main-color-hover-light: #faafaf;
+  --main-color-hover-dark: #f14c4c;
+}
+
+.info-card {
+  padding-bottom: 10px;
+}
+.info-card h6 {
+  font-size: 28px;
+  color: #012970;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.card-icon {
+  font-size: 32px;
+  line-height: 0;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.sales-card .card-icon {
+  color: #4154f1;
+  background: #f6f6fe;
+}
+.revenue-card .card-icon {
+  color: #2eca6a;
+  background: #e0f8e9;
+}
+.customers-card .card-icon {
+  color: #ff771d;
+  background: #ffecdf;
+}
+
+.profile-image {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.project-card {
+  /* border: 1px solid green; */
+  height: 550px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  margin: 10px;
+  position: relative;
+}
+
+.project-card-delete-wrapper {
+  float: right;
+  background-color: var(--main-color);
+  padding: 5px 10px 3px;
+  border-radius: 100%;
+}
+
+.project-card-delete {
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.btn-details {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+.btn-details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  /* background: #fc9d9d; */
+  background: #e6caca;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.btn-details span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+  transition: all 0.3s ease;
+}
+
+/* .btn-details span:hover{
+  color: #ffffff;
+} */
+
+.btn-details svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.btn-details:hover:before {
+  width: 100%;
+  color: white;
+  background: #f8a6a6;
+}
+
+.btn-details:hover svg {
+  transform: translateX(0);
+}
+
+.btn-details:active {
+  transform: scale(0.95);
+}
+
+.add-project {
+  position: fixed;
+  border: none;
+  background: none;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.add-project:focus,
+.add-project:active {
+  outline: 0;
+  background: none;
+  border: none;
+}
+
+.add-project .add-button {
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  cursor: pointer;  
+}
+
+.task-modal-data {
+  /* height: 100px; */
+  border-radius: 5px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 40px #bebebe,
+    -10px -10px 40px #ffffff;
+  margin: 10px;
+  position: relative;
+}
+
+.background-task-completed {
+  background-color: lightgreen;
+}
+
+.text-truncate-custom{
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  overflow-y: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: #fff;
+  border-radius: 50%;
+  transition: .4s;
+}
+input:checked + .slider {
+  /* background: #b892ff; */
+  background: var(--main-color-hover-light);
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.dark-mode {
+  background: #0b0a14;
+}
+.dark-mode h1 {
+  color: #f7f0e9;
+}
+
+/* OVERRIDE BOOTSTRAP PAGINATION STYLE */
+.pagination > li > a
+{
+    background-color: white;
+    color: var(--main-color);
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: var(--main-color) !Important;
+    border: solid 1px var(--main-color) !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: var(--main-color) !Important;
+    border: solid 1px var(--main-color);
+}
